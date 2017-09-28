@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>index</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/masonry.pkgd.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+    <div id="middle">
+        <div id="header">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="logo"><span>Free-Lancing</span></a>
+            </div>
+            <div class="menuwrap">
+                <ul id="menu" class="nav nav-pills menu">
+                    <li><a href="#">Scammers</a></li>
+                    <li><a href="#">Catalog</a></li>
+                    <li><a href="#">Works </a></li>
+                    <li><a href="#">Customers </a></li>
+                    <li><a href="#">Freelancers</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li class="active"><a href="#">Home</a></li>
+                </ul>
+                <ul class="nav nav-pills collect">
+                    <li class="dropdown dn">
+                        <a role="button" href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            More <span class="caret"></span>
+                        </a>
+                        <ul id="submenu" class="dropdown-menu"></ul>
+                    </li>
+                </ul>
+                <div class="li_avatar">
+                    <a href="#">Alex G.</a>
+                    <div class="image">
+                        <div class="img"><img src="images/cat.jpg" alt="img"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="col_left" class="">
+            <div class="side_bar">
+                <div id="global_search">
+                    <form action="">
+                        <div class="group">
+                            <ul class="type">
+                                <h3 class="title">Type</h3>
+                                <li>
+                                    <label><input type="checkbox" value="" name=""><span>Projects</span></label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox" value="" name=""><span>Vacancies</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="group">
+                            <ul class="date">
+                                <h3 class="title">Date</h3>
+                                <li>
+                                    <label><input type="checkbox" value="" name=""><span>Today</span></label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox" value="" name=""><span>This week</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="group">
+                            <ul class="value">
+                                <h3 class="title">
+                                    <span class="active">Salary</span>
+                                    <span>Usd</span>
+                                </h3>
+                                <li id="slider-range"></li>
+                                <li>
+                                    <input type="text" id="amount" readonly>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="group">
+                            <ul class="categories">
+                                <h3 class="title">Categories</h3>
+                                <li>
+                                    <label><input type="checkbox" value="" name=""><span>Web Development</span></label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox" value="" name=""><span> Design</span></label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox" value="" name=""><span>Marketing</span></label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox" value="" name=""><span>Copyrighting</span></label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox" value="" name=""><span>Content</span></label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox" value="" name=""><span>Management</span></label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox" value="" name=""><span>Texts</span></label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox" value="" name=""><span>Photography</span></label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox" value="" name=""><span>Mobile Development</span></label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox" value="" name=""><span>Translating</span></label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox" value="" name=""><span>Audio/Video</span></label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox" value="" name=""><span>Consulting</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="group">
+                            <ul class="top_free">
+                                <h3 class="title">Top-5 freelancers</h3>
+                                <li class="avatar">
+                                    <a href="#">
+                                        <div class="avatar_item">
+                                            <div class="avatar_image">
+                                                <img src="images/cat.jpg" alt="avatar">
+                                            </div>
+                                        </div>
+                                        <div class="avatar_info">
+                                            <span class="name">Николай К.</span>
+                                            <span class="reit">Rating:<b>620</b></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="avatar">
+                                    <a href="#">
+                                        <div class="avatar_item">
+                                            <div class="avatar_image">
+                                                <img src="images/cat.jpg" alt="avatar">
+                                            </div>
+                                        </div>
+                                        <div class="avatar_info">
+                                            <span class="name">Николай К.</span>
+                                            <span class="reit">Rating:<b>620</b></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="avatar">
+                                    <a href="#">
+                                        <div class="avatar_item">
+                                            <div class="avatar_image">
+                                                <img src="images/cat.jpg" alt="avatar">
+                                            </div>
+                                        </div>
+                                        <div class="avatar_info">
+                                            <span class="name">Николай К.</span>
+                                            <span class="reit">Rating:<b>620</b></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="avatar">
+                                    <a href="#">
+                                        <div class="avatar_item">
+                                            <div class="avatar_image">
+                                                <img src="images/cat.jpg" alt="avatar">
+                                            </div>
+                                        </div>
+                                        <div class="avatar_info">
+                                            <span class="name">Николай К.</span>
+                                            <span class="reit">Rating:<b>620</b></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="avatar">
+                                    <a href="#">
+                                        <div class="avatar_item">
+                                            <div class="avatar_image">
+                                                <img src="images/cat.jpg" alt="avatar">
+                                            </div>
+                                        </div>
+                                        <div class="avatar_info">
+                                            <span class="name">Николай К.</span>
+                                            <span class="reit">Rating:<b>620</b></span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                    <a class="view_all">View all</a>
+                </div>
+            </div>
+        </div>
+        <div id="col_right" class="">
+            <div class="main clearfix">
+                <h3 class="title">Offers</h3>
+                <div id="masonry_container" class="group_info">
+                    <div class="info_block">
+                        <div class="top">
+                            <span class="title">Write a slimple web application</span>
+                            <div class="marks">
+                                <span class="hand_down dn"><img src="images/icon_hand_down.png" alt="img"/></span>
+                                <span class="hand_up dn"><img src="images/icon_hand_up.png" alt="img"/></span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span class="value">1.350</span><span class="currency">usd</span>
+                        </div>
+                        <div class="info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea
+                        </div>
+                        <div class="info_block_hidden clearfix">
+                            <div class="group">
+                                <div class="top">
+                                    <span class="title">Write a slimple web application</span>
+                                <span class="result">
+                                    <a  href="#" class="dislike"></a>
+                                    <a  href="#" class="like"></a>
+                                </span>
+                                </div>
+                                <div class="price">
+                                    <span class="value">1.350</span><span class="currency">usd</span>
+                                </div>
+                                <div class="info">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea
+                                </div>
+                                <div class="teaser">
+                                    <div>
+                                        <span class="date"><img src="images/today_white.png" alt="today">25 Mar. 2017 - 10:09</span>
+                                        <span class="views"><img src="images/eye_white.png" alt="eye"><b>58</b>views</span>
+                                    </div>
+                                    <div>
+                                        <span class="contract">
+                                            <a href="#"><img src="images/folder_white.png" alt="folder">contract</a>
+                                        </span>
+                                        <span class="name">
+                                            <a href="#"><img src="images/person_white.png" alt="person">Johnatan Doe</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="submit" value="">
+                        </div>
+                    </div>
+                    <div class="info_block">
+                        <div class="top">
+                            <span class="title">Write a slimple web application</span>
+                            <div class="marks">
+                                <span class="hand_down dn"><img src="images/icon_hand_down.png" alt="img"/></span>
+                                <span class="hand_up dn"><img src="images/icon_hand_up.png" alt="img"/></span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span class="value">1.350</span><span class="currency">usd</span>
+                        </div>
+                        <div class="info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea
+                        </div>
+                        <div class="info_block_hidden clearfix">
+                            <div class="group">
+                                <div class="top">
+                                    <span class="title">Write a slimple web application</span>
+                                <span class="result">
+                                    <a  href="#" class="dislike"></a>
+                                    <a  href="#" class="like"></a>
+                                </span>
+                                </div>
+                                <div class="price">
+                                    <span class="value">1.350</span><span class="currency">usd</span>
+                                </div>
+                                <div class="info">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea
+                                </div>
+                                <div class="teaser">
+                                    <div>
+                                        <span class="date"><img src="images/today_white.png" alt="today">25 Mar. 2017 - 10:09</span>
+                                        <span class="views"><img src="images/eye_white.png" alt="eye"><b>58</b>views</span>
+                                    </div>
+                                    <div>
+                                        <span class="contract">
+                                            <a href="#"><img src="images/folder_white.png" alt="folder">contract</a>
+                                        </span>
+                                        <span class="name">
+                                            <a href="#"><img src="images/person_white.png" alt="person">Johnatan Doe</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="submit" value="">
+                        </div>
+                    </div>
+                    <div class="info_block">
+                        <div class="top">
+                            <span class="title">Write a slimple web application</span>
+                            <div class="marks">
+                                <span class="hand_down dn"><img src="images/icon_hand_down.png" alt="img"/></span>
+                                <span class="hand_up dn"><img src="images/icon_hand_up.png" alt="img"/></span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span class="value">1.350</span><span class="currency">usd</span>
+                        </div>
+                        <div class="info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea
+                        </div>
+                        <div class="info_block_hidden clearfix">
+                            <div class="group">
+                                <div class="top">
+                                    <span class="title">Write a slimple web application</span>
+                                <span class="result">
+                                    <a  href="#" class="dislike"></a>
+                                    <a  href="#" class="like"></a>
+                                </span>
+                                </div>
+                                <div class="price">
+                                    <span class="value">1.350</span><span class="currency">usd</span>
+                                </div>
+                                <div class="info">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea
+                                </div>
+                                <div class="teaser">
+                                    <div>
+                                        <span class="date"><img src="images/today_white.png" alt="today">25 Mar. 2017 - 10:09</span>
+                                        <span class="views"><img src="images/eye_white.png" alt="eye"><b>58</b>views</span>
+                                    </div>
+                                    <div>
+                                        <span class="contract">
+                                            <a href="#"><img src="images/folder_white.png" alt="folder">contract</a>
+                                        </span>
+                                        <span class="name">
+                                            <a href="#"><img src="images/person_white.png" alt="person">Johnatan Doe</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="submit" value="">
+                        </div>
+                    </div>
+                    <div class="info_block">
+                        <div class="top">
+                            <span class="title">Write a slimple web application</span>
+                            <div class="marks">
+                                <span class="hand_down dn"><img src="images/icon_hand_down.png" alt="img"/></span>
+                                <span class="hand_up dn"><img src="images/icon_hand_up.png" alt="img"/></span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span class="value">1.350</span><span class="currency">usd</span>
+                        </div>
+                        <div class="info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea
+                        </div>
+                        <div class="info_block_hidden clearfix">
+                            <div class="group">
+                                <div class="top">
+                                    <span class="title">Write a slimple web application</span>
+                                <span class="result">
+                                    <a  href="#" class="dislike"></a>
+                                    <a  href="#" class="like"></a>
+                                </span>
+                                </div>
+                                <div class="price">
+                                    <span class="value">1.350</span><span class="currency">usd</span>
+                                </div>
+                                <div class="info">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea
+                                </div>
+                                <div class="teaser">
+                                    <div>
+                                        <span class="date"><img src="images/today_white.png" alt="today">25 Mar. 2017 - 10:09</span>
+                                        <span class="views"><img src="images/eye_white.png" alt="eye"><b>58</b>views</span>
+                                    </div>
+                                    <div>
+                                        <span class="contract">
+                                            <a href="#"><img src="images/folder_white.png" alt="folder">contract</a>
+                                        </span>
+                                        <span class="name">
+                                            <a href="#"><img src="images/person_white.png" alt="person">Johnatan Doe</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="submit" value="">
+                        </div>
+                    </div>
+                    <div class="info_block">
+                        <div class="top">
+                            <span class="title">Write a slimple web application</span>
+                            <div class="marks">
+                                <span class="hand_down dn"><img src="images/icon_hand_down.png" alt="img"/></span>
+                                <span class="hand_up dn"><img src="images/icon_hand_up.png" alt="img"/></span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span class="value">1.350</span><span class="currency">usd</span>
+                        </div>
+                        <div class="info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea
+                        </div>
+                        <div class="info_block_hidden clearfix">
+                            <div class="group">
+                                <div class="top">
+                                    <span class="title">Write a slimple web application</span>
+                                <span class="result">
+                                    <a  href="#" class="dislike"></a>
+                                    <a  href="#" class="like"></a>
+                                </span>
+                                </div>
+                                <div class="price">
+                                    <span class="value">1.350</span><span class="currency">usd</span>
+                                </div>
+                                <div class="info">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea
+                                </div>
+                                <div class="teaser">
+                                    <div>
+                                        <span class="date"><img src="images/today_white.png" alt="today">25 Mar. 2017 - 10:09</span>
+                                        <span class="views"><img src="images/eye_white.png" alt="eye"><b>58</b>views</span>
+                                    </div>
+                                    <div>
+                                        <span class="contract">
+                                            <a href="#"><img src="images/folder_white.png" alt="folder">contract</a>
+                                        </span>
+                                        <span class="name">
+                                            <a href="#"><img src="images/person_white.png" alt="person">Johnatan Doe</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="submit" value="">
+                        </div>
+                    </div>
+                </div>
+                <div id="pagination">
+                    <ul class="pagination">
+                        <li class="disabled"><span>Prev</span></li>
+                        <li class="active"><span>1</span></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,959 @@
+@font-face {
+    font-family: 'Averta';
+    src: url('../fonts/Averta.eot');
+    src: url('../fonts/Averta.eot') format('embedded-opentype'),
+    url('../fonts/Averta.woff2') format('woff2'),
+    url('../fonts/Averta.woff') format('woff'),
+    url('../fonts/Averta.ttf') format('truetype'),
+    url('../fonts/Averta.svg#Averta') format('svg');
+}
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('../fonts/RobotoMedium.eot');
+    src: url('../fonts/RobotoMedium.eot') format('embedded-opentype'),
+    url('../fonts/RobotoMedium.woff2') format('woff2'),
+    url('../fonts/RobotoMedium.woff') format('woff'),
+    url('../fonts/RobotoMedium.ttf') format('truetype'),
+    url('../fonts/RobotoMedium.svg#RobotoMedium') format('svg');
+}
+@font-face {
+    font-family: 'AvertaBold';
+    src: url('../fonts/AvertaBold.eot');
+    src: url('../fonts/AvertaBold.eot') format('embedded-opentype'),
+    url('../fonts/AvertaBold.woff2') format('woff2'),
+    url('../fonts/AvertaBold.woff') format('woff'),
+    url('../fonts/AvertaBold.ttf') format('truetype'),
+    url('../fonts/AvertaBold.svg#AvertaBold') format('svg');
+}
+@font-face {
+    font-family: 'AvertaExtraBold';
+    src: url('../fonts/AvertaExtraBold.eot');
+    src: url('../fonts/AvertaExtraBold.eot') format('embedded-opentype'),
+    url('../fonts/AvertaExtraBold.woff2') format('woff2'),
+    url('../fonts/AvertaExtraBold.woff') format('woff'),
+    url('../fonts/AvertaExtraBold.ttf') format('truetype'),
+    url('../fonts/AvertaExtraBold.svg#AvertaExtraBold') format('svg');
+}
+
+@font-face {
+    font-family: 'AvertaExtraBoldItalic';
+    src: url('../fonts/AvertaExtraBoldItalic.eot');
+    src: url('../fonts/AvertaExtraBoldItalic.eot') format('embedded-opentype'),
+    url('../fonts/AvertaExtraBoldItalic.woff2') format('woff2'),
+    url('../fonts/AvertaExtraBoldItalic.woff') format('woff'),
+    url('../fonts/AvertaExtraBoldItalic.ttf') format('truetype'),
+    url('../fonts/AvertaExtraBoldItalic.svg#AvertaExtraBoldItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'AvertaBlackItalic';
+    src: url('../fonts/AvertaBlackItalic.eot');
+    src: url('../fonts/AvertaBlackItalic.eot') format('embedded-opentype'),
+    url('../fonts/AvertaBlackItalic.woff2') format('woff2'),
+    url('../fonts/AvertaBlackItalic.woff') format('woff'),
+    url('../fonts/AvertaBlackItalic.ttf') format('truetype'),
+    url('../fonts/AvertaBlackItalic.svg#AvertaBlackItalic') format('svg');
+}
+@font-face {
+    font-family: 'AvertaBoldItalic';
+    src: url('../fonts/AvertaBoldItalic.eot');
+    src: url('../fonts/AvertaBoldItalic.eot') format('embedded-opentype'),
+    url('../fonts/AvertaBoldItalic.woff2') format('woff2'),
+    url('../fonts/AvertaBoldItalic.woff') format('woff'),
+    url('../fonts/AvertaBoldItalic.ttf') format('truetype'),
+    url('../fonts/AvertaBoldItalic.svg#AvertaBoldItalic') format('svg');
+}
+@font-face {
+    font-family: 'AvertaBlack';
+    src: url('../fonts/AvertaBlack.eot');
+    src: url('../fonts/AvertaBlack.eot') format('embedded-opentype'),
+    url('../fonts/AvertaBlack.woff2') format('woff2'),
+    url('../fonts/AvertaBlack.woff') format('woff'),
+    url('../fonts/AvertaBlack.ttf') format('truetype'),
+    url('../fonts/AvertaBlack.svg#AvertaBlack') format('svg');
+}
+@font-face {
+    font-family: 'AvertaExtrathin';
+    src: url('../fonts/AvertaExtrathin.eot');
+    src: url('../fonts/AvertaExtrathin.eot') format('embedded-opentype'),
+    url('../fonts/AvertaExtrathin.woff2') format('woff2'),
+    url('../fonts/AvertaExtrathin.woff') format('woff'),
+    url('../fonts/AvertaExtrathin.ttf') format('truetype'),
+    url('../fonts/AvertaExtrathin.svg#AvertaExtrathin') format('svg');
+}
+
+@font-face {
+    font-family: 'AvertaExtrathinItalic';
+    src: url('../fonts/AvertaExtrathinItalic.eot');
+    src: url('../fonts/AvertaExtrathinItalic.eot') format('embedded-opentype'),
+    url('../fonts/AvertaExtrathinItalic.woff2') format('woff2'),
+    url('../fonts/AvertaExtrathinItalic.woff') format('woff'),
+    url('../fonts/AvertaExtrathinItalic.ttf') format('truetype'),
+    url('../fonts/AvertaExtrathinItalic.svg#AvertaExtrathinItalic') format('svg');
+}
+@font-face {
+    font-family: 'AvertaLightItalic';
+    src: url('../fonts/AvertaLightItalic.eot');
+    src: url('../fonts/AvertaLightItalic.eot') format('embedded-opentype'),
+    url('../fonts/AvertaLightItalic.woff2') format('woff2'),
+    url('../fonts/AvertaLightItalic.woff') format('woff'),
+    url('../fonts/AvertaLightItalic.ttf') format('truetype'),
+    url('../fonts/AvertaLightItalic.svg#AvertaLightItalic') format('svg');
+}
+@font-face {
+    font-family: 'AvertaLight';
+    src: url('../fonts/AvertaLight.eot');
+    src: url('../fonts/AvertaLight.eot') format('embedded-opentype'),
+    url('../fonts/AvertaLight.woff2') format('woff2'),
+    url('../fonts/AvertaLight.woff') format('woff'),
+    url('../fonts/AvertaLight.ttf') format('truetype'),
+    url('../fonts/AvertaLight.svg#AvertaLight') format('svg');
+}
+@font-face {
+    font-family: 'AvertaRegularItalic';
+    src: url('../fonts/AvertaRegularItalic.eot');
+    src: url('../fonts/AvertaRegularItalic.eot') format('embedded-opentype'),
+    url('../fonts/AvertaRegularItalic.woff2') format('woff2'),
+    url('../fonts/AvertaRegularItalic.woff') format('woff'),
+    url('../fonts/AvertaRegularItalic.ttf') format('truetype'),
+    url('../fonts/AvertaRegularItalic.svg#AvertaRegularItalic') format('svg');
+}
+@font-face {
+    font-family: 'AvertaSemiboldItalic';
+    src: url('../fonts/AvertaSemiboldItalic.eot');
+    src: url('../fonts/AvertaSemiboldItalic.eot') format('embedded-opentype'),
+    url('../fonts/AvertaSemiboldItalic.woff2') format('woff2'),
+    url('../fonts/AvertaSemiboldItalic.woff') format('woff'),
+    url('../fonts/AvertaSemiboldItalic.ttf') format('truetype'),
+    url('../fonts/AvertaSemiboldItalic.svg#AvertaSemiboldItalic') format('svg');
+}
+@font-face {
+    font-family: 'AvertaSemibold';
+    src: url('../fonts/AvertaSemibold.eot');
+    src: url('../fonts/AvertaSemibold.eot') format('embedded-opentype'),
+    url('../fonts/AvertaSemibold.woff2') format('woff2'),
+    url('../fonts/AvertaSemibold.woff') format('woff'),
+    url('../fonts/AvertaSemibold.ttf') format('truetype'),
+    url('../fonts/AvertaSemibold.svg#AvertaSemibold') format('svg');
+}
+@font-face {
+    font-family: 'AvertaThinItalic';
+    src: url('../fonts/AvertaThinItalic.eot');
+    src: url('../fonts/AvertaThinItalic.eot') format('embedded-opentype'),
+    url('../fonts/AvertaThinItalic.woff2') format('woff2'),
+    url('../fonts/AvertaThinItalic.woff') format('woff'),
+    url('../fonts/AvertaThinItalic.ttf') format('truetype'),
+    url('../fonts/AvertaThinItalic.svg#AvertaThinItalic') format('svg');
+}
+@font-face {
+    font-family: 'Conv_Averta Thin';
+    src: url('../fonts/Averta Thin.eot');
+    src: local('☺'), url('../fonts/Averta Thin.woff') format('woff'),
+    url('../fonts/Averta Thin.ttf') format('truetype'),
+    url('../fonts/Averta Thin.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: url('../fonts/MyriadProRegular.eot');
+    src: url('../fonts/MyriadProRegular.eot') format('embedded-opentype'),
+    url('../fonts/MyriadProRegular.woff2') format('woff2'),
+    url('../fonts/MyriadProRegular.woff') format('woff'),
+    url('../fonts/MyriadProRegular.ttf') format('truetype'),
+    url('../fonts/MyriadProRegular.svg#MyriadProRegular') format('svg');
+}
+
+
+
+
+/*_________________________________________________________end_fonts___________________________________________*/
+
+
+/*_________________________________________________________css_reset____________________________________________*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header,menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*_____________________________________________________end_css_reset____________________________________________*/
+
+
+#wrapper {
+    width: 100%;
+    margin: auto;
+    max-width: 2600px;
+    height: auto !important;
+}
+
+
+.container{
+    max-width: 2600px;
+    width: 100%;
+
+}
+h3.title{
+    font-family: 'AvertaSemibold',sans-serif;
+    font-size: 14px;
+    color: #000;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0 0 14px 0;
+    margin-bottom: 30px;
+}
+h3.title::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: #5ea6ce;
+    width: 36px;
+    bottom: 0;
+    left: 0;
+}
+
+
+#wrapper {
+    width: 100%;
+    max-width:100%;
+    margin: 0 auto;
+    height: auto !important;
+}
+#middle{
+    max-width: 2600px;
+    width: 100%;
+    margin: auto;
+}
+
+#col_left {
+    border: 0 solid #000;
+    margin-right:0;
+    width: 280px;
+    padding: 20px;
+    float: left;
+    background: #fafafa;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+#col_right {
+    position:relative;
+    background: #fff;
+    padding: 20px;
+    margin-left: 300px;
+}
+
+
+/*___________________________________________________________________________________________________________*/
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+#header{
+    height: 120px;
+
+}
+
+.logo{
+    float: left;
+    background: #f5f5f5;
+    width: 280px;
+    height: 100%;
+    padding: 40px;
+}
+.logo a{
+    text-decoration: none;
+}
+.logo a img{
+    max-width: 100%;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+.logo a span{
+    font-family: 'MyriadProRegular',sans-serif;
+    font-size: 24px;
+    color: #000;
+}
+
+
+div.menuwrap {
+    position: relative;
+    background-color: #fafafa;
+    height: 100%;
+    overflow: visible;
+    margin-left: 280px;
+    padding: 35px 200px 0 0;
+}
+ul.menu {
+    height: 100%;
+
+    overflow: hidden;
+    margin-right: 100px;
+    padding-left: 100px;
+}
+ul.menu > li {
+    display: block;
+    float: right;
+    height: auto;
+    white-space: nowrap;
+    padding: 4px 8px;
+}
+ul.menu  li a{
+    font-family: 'Averta',sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+ul.collect {
+    position: absolute;
+    right: 200px;
+    top: 0;
+    overflow: visible;
+    padding: 40px 20px;
+}
+ul.collect ul.dropdown-menu {
+    right: 0;
+    left: auto;
+    z-index: 9999
+}
+
+.nav-pills li a{
+    font-family: 'Averta',sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+.li_avatar{
+    display: table;
+    padding:40px;
+    position: absolute;
+    right: 70px;
+    top: 0;
+}
+.li_avatar a{
+    vertical-align: middle;
+    font-family: 'Averta',sans-serif;
+    font-size: 14px;
+    color: #000;
+    display: table-cell;
+    padding-right: 15px;
+}
+.li_avatar .image{
+    width: 35px;
+    margin: auto;
+    display: block;
+    float: right;
+}
+.li_avatar .img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.li_avatar .img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -webkit-transform: translate(0,-50%);
+}
+
+.dropdown-menu>li:hover,
+.dropdown-menu>li:focus {
+    text-decoration: none;
+    color: #262626;
+    background-color: #f5f5f5;
+}
+
+.nav-pills.collect .dropdown .dropdown-toggle {
+    background-color: #5ea6ce;
+    border-color: #5ea6ce;
+    color: #fff;
+}
+.nav-pills.collect .dropdown.open .dropdown-toggle {
+    background-color: #fff;
+    border-color: #5ea6ce;
+    color: #262626;
+}
+.nav-pills.collect .dropdown .dropdown-toggle:hover{
+    opacity: 0.9;
+}
+
+.nav-pills.collect>li>a:hover, .nav-pills.collect>li>a:focus {
+    text-decoration: none;
+    background-color: #fff;
+    color: #262626;
+}
+
+
+.nav-pills.menu>li.active>a, .nav-pills.menu>li.active>a:hover, .nav-pills.menu>li.active>a:focus {
+    color: #5ea6ce;
+    background-color: transparent;
+}
+
+.nav-pills.menu>li>a:hover, .nav-pills.menu>li>a:focus {
+    text-decoration: none;
+    background-color: transparent;
+    color:#5ea6ce ;
+}
+
+
+
+.group_info:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+#masonry_container {
+    width:100%;
+    position:relative;
+    z-index:2001;
+}
+
+.info_block {
+    padding: 15px 15px 30px 20px;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    width: 420px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.info_block span.title{
+    font-family: 'MyriadProRegular',sans-serif;
+    font-size: 18px;
+    color: #000;
+}
+.info_block .top{
+    display: table;
+    vertical-align: middle;
+    width: 100%;
+}
+.info_block .top span{
+    display: table-cell;
+    vertical-align: middle;
+}
+.info_block .top span.result{
+    text-align: right;
+}
+
+#open_box,#open_box_1{
+    display: none;
+}
+.info_block .price{
+    font-family: 'Averta',sans-serif;
+    font-size: 12px;
+    color: #7e7e7e;
+    text-transform: uppercase;
+}
+.info_block .price .value{
+    margin-right: 5px;
+}
+
+.info_block .info{
+    margin-top: 30px;
+    font-family: 'MyriadProRegular',sans-serif;
+    color: #000;
+    font-size: 14px;
+    line-height: 120%;
+}
+.info_block .info_block_hidden{
+    background: #5ea6ce;
+    border:1px solid #ebebeb;
+    width: 545px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 9;
+    display: none;
+    left: -15px;
+    border-radius: 5px;
+    cursor: auto;
+}
+
+.info_block .info_block_hidden .group{
+    width: 440px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.info_block .info_block_hidden input[type=submit]{
+    background:url("../images/arrow_forward_white.png")no-repeat #5495b9 center;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    top: 0;
+    outline: none;
+    border: none;
+    border-left: none;
+    float: left;
+    width: 100px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: block;
+}
+
+
+
+.info_block .info_block_hidden input[type=submit]:hover{
+    background:url("../images/arrow_forward_white.png")no-repeat #377191;
+    background-position: 51%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.info_block .info_block_hidden span.title{
+    font-family: 'MyriadProRegular',sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+.info_block .info_block_hidden .price{
+    font-family: 'Averta',sans-serif;
+    font-size: 12px;
+    color: #d1e3ef;
+    margin-top: 7px;
+}
+
+.info_block .info_block_hidden .info{
+    margin-top: 30px;
+    font-family: 'MyriadProRegular',sans-serif;
+    color: #fff;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.info_block .info_block_hidden .teaser{
+    margin-top: 40px;
+}
+
+.info_block .info_block_hidden .teaser span {
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    font-family: 'Averta',sans-serif;
+    font-size: 12px;
+    color: #d1e3ef;
+}
+
+.info_block .info_block_hidden .teaser span a {
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    font-family: 'Averta',sans-serif;
+    font-size: 12px;
+    color: #d1e3ef;
+}
+.info_block .info_block_hidden .teaser span a:hover {
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    font-family: 'Averta',sans-serif;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: underline;
+}
+.info_block .info_block_hidden .teaser span:last-child {
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 0;
+}
+
+.info_block .info_block_hidden .teaser span img{
+    margin-right: 10px;
+}
+.info_block .info_block_hidden .top .result a.dislike{
+    display: inline-block;
+    background: url("../images/thumb_down_blue.png")no-repeat;
+    width: 16px;
+    height: 15px;
+}
+.info_block .info_block_hidden .top .result a.dislike:hover{
+    display: inline-block;
+    background: url("../images/thumb_down_white.png")no-repeat;
+    width: 16px;
+    height: 15px;
+}
+.info_block .info_block_hidden .top .result a.dislike.active {
+    background: url("../images/thumb_down_white.png")no-repeat;
+}
+.info_block .info_block_hidden .top .result a.like.active {
+    background: url("../images/thumb_up.png")no-repeat;
+}
+.info_block .info_block_hidden .top .result a.like{
+    display: inline-block;
+    background: url("../images/thumb_up_blue.png")no-repeat;
+    width: 16px;
+    height: 15px;
+}
+.info_block .info_block_hidden .top .result a.like:hover{
+    display: inline-block;
+    background: url("../images/thumb_up.png")no-repeat;
+    width: 16px;
+    height: 15px;
+}
+
+
+.info_block .info_block_hidden .top .result a:first-child{
+    margin-right: 12px;
+}
+.info_block .info_block_hidden .top .result span.active{
+    display: inline-block;
+}
+
+
+#global_search form input[type="checkbox"]{
+    display: none;
+}
+
+#global_search form input[type="checkbox"] + span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 19px;
+    background: url(../images/checkbox_unchecked.png) no-repeat;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;;
+    -moz-transition: all 0.5s ease;;
+    -o-transition: all 0.5s ease;;
+    transition: all 0.5s ease;
+}
+#global_search form label span{
+    padding-left: 25px;
+}
+#global_search form label {
+    font-family: 'Averta',sans-serif;
+    font-size: 14px;
+    color: #000;
+    width: 100%;
+    height:19px;
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    white-space: nowrap;
+}
+#global_search form label:last-child{
+    margin-bottom: 0;
+}
+#global_search form input[type="checkbox"]:checked + span  	{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:19px;
+    background: url(../images/checkbox-checked_back.png) no-repeat;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;;
+    -moz-transition: all 0.5s ease;;
+    -o-transition: all 0.5s ease;;
+    transition: all 0.5s ease;
+}
+
+#global_search form .group{
+    margin-bottom: 60px;
+}
+
+#global_search form .group ul.value h3.title:before{
+    display: none;
+}
+#global_search form .group ul.value h3.title span.active{
+    font-family: 'AvertaSemibold',sans-serif;
+    font-size: 14px;
+    color: #000;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0 0 14px 0;
+}
+#global_search form .group ul.value h3.title span{
+    font-family: 'AvertaSemibold',sans-serif;
+    font-size: 14px;
+    color: #c7c7c7;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0 0 14px 0;
+    cursor: pointer;
+}
+#global_search form .group ul.value h3.title span.active:before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: #5ea6ce;
+    width: 36px;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+#slider-range.ui-widget.ui-widget-content {
+    border: none;
+    border-radius: 10px;
+    background: #ededed;
+}
+#slider-range .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    background-position: 0 0;
+    background: #b4d1e1;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button, html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active,
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus, .ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus, .ui-button:hover,
+.ui-button:focus {
+    border: 6px solid #5ea6ce;
+    background: #fff;
+    font-weight: normal;
+    color: #454545;
+    border-radius: 50%;
+    outline: none;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -0.2em;
+    margin-left: -.6em;
+    cursor: pointer;
+}
+#amount {
+    border: 0;
+    font-weight: normal;
+    font-family: 'Averta',sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin-top: 10px;
+    width: 100%;
+    background: inherit;
+}
+
+
+.avatar{
+    display: table;
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: 17px;
+}
+.top_free .avatar a{
+    text-decoration: none;
+}
+.avatar_item{
+    width:36px;
+    margin:auto;
+    float: left;
+    margin-right: 15px;
+}
+.avatar_image{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.avatar_image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -webkit-transform: translate(0,-50%);
+}
+
+.avatar_info{
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.avatar_info span{
+    display: block;
+}
+.avatar_info span.name{
+    font-family: 'MyriadProRegular',sans-serif;
+    color: #000;
+    font-size: 16px;
+}
+
+.avatar_info span.reit{
+    font-family: 'Averta',sans-serif;
+    font-size: 14px;
+    color: #5ea6ce;
+}
+.avatar:hover span{
+    display: table;
+    width: 100%;
+    vertical-align: middle;
+    color: #5ea6ce;
+    -webkit-transition: all 0.5s ease;;
+    -moz-transition: all 0.5s ease;;
+    -o-transition: all 0.5s ease;;
+    transition: all 0.5s ease;
+}
+.avatar:hover .avatar_image{
+    box-shadow: 10px 10px 20px 0 rgba(94, 166, 206, 0.2);
+    -webkit-transition: all 0.5s ease;;
+    -moz-transition: all 0.5s ease;;
+    -o-transition: all 0.5s ease;;
+    transition: all 0.5s ease;
+}
+.dn {
+    display: none !important;
+}
+.marks{
+    min-height: 35px;
+}
+
+
+#pagination .pagination>li>a,
+#pagination .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #acacac;
+    background-color: #fff;
+    border: none;
+    margin-left: -1px;
+    font-family: 'RobotoMedium',sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+#pagination .pagination>.active>a,
+#pagination .pagination>.active>span,
+#pagination .pagination>.active>a:hover,
+#pagination .pagination>.active>span:hover,
+#pagination .pagination>.active>a:focus,
+#pagination .pagination>.active>span:focus {
+    z-index: 3;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: default;
+    color: #4daed5;
+}
+
+#pagination .pagination>li>a:hover,
+#pagination .pagination>li>span:hover,
+#pagination .pagination>li>a:focus,
+#pagination .pagination>li>span:focus {
+    z-index: 2;
+    color: #4daed5;
+    background-color: transparent;
+    border-color:transparent;
+}
+
+#pagination .pagination>li:first-child span{
+    background: url("../images/arrow_left.png")no-repeat left;
+    color: #00cc66;
+    padding-left: 23px;
+    margin-right: 60px;
+}
+#pagination .pagination>li:first-child span:hover{
+    background: url("../images/arrow_left_hover.png")no-repeat left;
+}
+
+#pagination .pagination>li:last-child a{
+    background: url("../images/arrow_right.png")no-repeat right;
+    color: #00cc66;
+    padding-right: 23px;
+    margin-left: 60px;
+}
+#pagination .pagination>li:last-child a:hover{
+    background: url("../images/arrow_right_hover.png")no-repeat right;
+    color: #00cc66;
+    padding-right: 23px;
+    margin-left: 60px;
+}
+.view_all{
+    background: url("../images/arrow_right_blue.png")no-repeat right;
+    padding-right: 23px;
+    text-transform: uppercase;
+    width: 80px;
+    margin: auto;
+    font-family: 'AvertaSemibold',sans-serif;
+    font-size: 12px;
+    display: block;
+    color: #4daed5;
+    cursor: pointer;
+}
+.view_all:hover{
+    padding-right: 23px;
+    text-transform: uppercase;
+    width: 80px;
+    margin: auto;
+    font-family: 'AvertaSemibold',sans-serif;
+    font-size: 12px;
+    display: block;
+    color: #4daed5;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
